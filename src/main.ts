@@ -1,8 +1,13 @@
-const app = document.querySelector<HTMLDivElement>('#app')!;
+import * as Framework from './render';
 
-app.innerHTML = `
-  <h1>Setup using Vite</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+let element = {
+  nodeName: 'div',
+  attributes: {
+    id: 'foo',
+  },
+  children: ['Hello!'],
+};
 
-export {};
+let dom = Framework.render(element);
+
+document.body.appendChild(dom);
