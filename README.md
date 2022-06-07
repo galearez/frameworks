@@ -1,9 +1,9 @@
-# Practice projects
+# JSX renderer
 
-This directory contains the projects I've made as practice to help me understand, how the technologies we use in web development work.
+JSX is a syntax extension to the JavaScript language, provides a way to structure components rendering using a familiar syntax for all web developers.
 
-Here you can find my implementations of the parts we can usually find in a framework/library, some packages, and other things.
+It was developed by the React team at Meta (formerly Facebook), and its used by a few frameworks like Solid.js and the mentioned before React.js
 
-## Projects
+## Description
 
-**All this projects are based on other peoples effort to help people like me to learn, thanks to all of them**
+This is my own implementation of a JSX renderer, and its based on the work of two people [Jason Miller](https://jasonformat.com/wtf-is-jsx/) and [Rodrigo Pombo](https://pomb.us/build-your-own-react/).
