@@ -1,5 +1,7 @@
+// This type fixed ts(2345)
 type ChildrenType = string | VNode;
 
+// This is the common structure a JSX element must follow
 interface VNode {
   nodeName: string;
   attributes?: any;
@@ -15,6 +17,7 @@ function create(nodeName: string, attributes: {}, ...args: any): VNode {
   return { nodeName, attributes, children };
 }
 
+// This function will render a JSX element and all its children
 function render(vnode: string | VNode) {
   if (typeof vnode === 'string') return document.createTextNode(vnode);
 
