@@ -8,15 +8,6 @@ interface VNode {
   children?: ChildrenType[] | null;
 }
 
-// This function creates a single HTML node
-function create(nodeName: string, attributes: {}, ...args: any): VNode {
-  let children = args.length
-    ? ([].concat(...args) as unknown as ChildrenType[])
-    : null;
-
-  return { nodeName, attributes, children };
-}
-
 // This function will render a JSX element and all its children
 function render(vnode: string | VNode) {
   if (typeof vnode === 'string') return document.createTextNode(vnode);
@@ -31,4 +22,4 @@ function render(vnode: string | VNode) {
   return node;
 }
 
-export { create, render };
+export { render };
